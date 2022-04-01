@@ -84,6 +84,9 @@ func GetLeapSeconds(when time.Time) int {
 				break
 			}
 		}
+		if year - LeapSecondsBaseYear >= len(LeapSecondsAdjustments) {
+			break
+		}
 		entry := LeapSecondsAdjustments[year - LeapSecondsBaseYear]
 		if year == when.Year() {
 			if when.Month() > time.June {
