@@ -69,6 +69,8 @@ var LeapSecondsAdjustments = [][2]int{
 	[2]int{0, 0}, // 2019
 	[2]int{0, 0}, // 2020
 	[2]int{0, 0}, // 2021
+	[2]int{0, 0}, // 2022
+	[2]int{0, 0}, // 202r
 }
 
 func GetLeapSeconds(when time.Time) int {
